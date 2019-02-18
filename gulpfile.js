@@ -6,14 +6,14 @@ var sass = require("gulp-sass");
 var webserver = require("gulp-webserver");
 
 //开启服务
-// gulp.task("webserver", function() {
-//     return gulp.src("./src")
-//         .pipe(webserver() {
-//             open: true,
-//             port: 8080,
-//             livereload: true
-//         })
-// })
+gulp.task("webserver", function() {
+    return gulp.src("./src")
+        .pipe(webserver() {
+            open: true,
+            port: 8080,
+            livereload: true
+        })
+})
 
 //scss
 gulp.task("sass", function() {
